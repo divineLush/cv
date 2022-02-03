@@ -31,16 +31,17 @@
       padding: 0 4rem 2rem;
       font-size: 1.6rem;
       animation: main 1s ease;
-      max-width: 60%;
     }
 
     @keyframes main {
       0% {
-        margin-top: 20rem;
+        margin-top: 10rem;
+        opacity: .3;
       }
 
       100% {
         margin-top: 0;
+        opacity: 1;
       }
     }
 
@@ -79,12 +80,21 @@
       margin: 1.5rem 0;
     }
 
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     .p {
       padding: 0 4rem;
     }
 
     .m {
       margin: 3rem 0;
+    }
+
+    .skills-block {
+      max-width: 60%;
     }
 
     .skill {
@@ -100,7 +110,7 @@
     }
 
     @media (max-width: 768px) {
-      main {
+      .skills-block {
         max-width: 100%;
       }
     }
@@ -108,20 +118,22 @@
 </head>
 <body>
   <header>
-    <h1>Алексей Вишняков</h1>
-    <span>Frontend разработчик</span>
-    <address>
-      <a href="tel:+79831242181">8 983 124-21-81</a>
-      <a href="mailto:alvipath@yahoo.com">alvipath@yahoo.com</a>
-      <a href="https://github.com/divineLush">GitHub</a>
-    </address>
+    <div class="container">
+      <h1>Алексей Вишняков</h1>
+      <span>Frontend разработчик</span>
+      <address>
+        <a href="tel:+79831242181">8 983 124-21-81</a>
+        <a href="mailto:alvipath@yahoo.com">alvipath@yahoo.com</a>
+        <a href="https://github.com/divineLush">GitHub</a>
+      </address>
+    </div>
   </header>
-  <main>
+  <main class="container">
     <section>
       <h2>Опыт работы - 2 года</h2>
       <div class="m">
         <h3><a href="https://www.artlebedev.ru/">Студия Артемия Лебедева</a></h3>
-        <span>Апрель 2021 - Май 2021</span>
+        <span>Апрель 2021 - Июнь 2021</span>
       </div>
       <div class="m">
         <h3><a href="https://novosibirsk.e2e4online.ru/">e2e4</a></h3>
@@ -136,7 +148,7 @@
         <span>Июнь 2019 - Октябрь 2019</span>
       </div>
     </section>
-    <section>
+    <section class="skills-block">
       <h2>Навыки</h2>
       <span class="skill">HTML</span>
       <span class="skill">CSS</span>
@@ -147,6 +159,8 @@
       <span class="skill">Nuxt</span>
       <span class="skill">React</span>
       <span class="skill">Web&nbsp;Components</span>
+      <span class="skill">Git</span>
+      <span class="skill">Linux</span>
     </section>
     <section>
       <h2>Образование</h2>
